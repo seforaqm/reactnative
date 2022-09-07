@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native';
-import { Card, Icon } from 'react-native-elements';
+import { Card, Icon, withTheme } from 'react-native-elements';
 import { baseUrl } from '../../shared/baseUrl';
 
 const RenderCampsite = (props) => {
@@ -56,6 +56,7 @@ const styles = StyleSheet.create({
         margin: 20
     },
     cardText: {
+        color: 'white',
         textShadowColor: 'rgba(0,0,0,1)',
         textShadowOffset: { width: -1, height: 1 },
         textShadowRadius: 20,
